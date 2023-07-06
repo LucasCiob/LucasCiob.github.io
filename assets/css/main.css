@@ -3070,141 +3070,57 @@ z-index: 1;
 			}
 
 /* Banner */
+/* Banner */
 
-	#banner {
-		padding: 5em 0em 10em 0em;
-		background-image: image(url("mymotherpic.jpg");)
-		background-size: contain;
-		background-position: top;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		text-align: center;
-		border-top: 0;
-	}
-
-		#banner h1 {
-			font-size: 5.0em;
-			font-weight: 1000;
-			color: #fff;
-			line-height: 1em;
-			margin: 0 0 0 0;
-			padding: 0;
-		}
-
-		#banner p {
-			font-size: 3em;
-			color: rgba(255, 255, 255, 1);
-			margin-bottom: 0em;
-			font-weight: 500;
-		}
-
-		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-
-			#banner {
-				background-attachment: scroll;
-			}
-
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			#banner {
-				padding: 5em 0em 9em 0em;
-			}
-							#banner h1 {
-					font-size: 4em;
-				}
-
-				#banner p {
-					font-size: 2.5em;
-								font-weight: 1000;
-
-				}
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
 
 
-		}
+:root {
+	--banner-padding-top: 5em;
+	--banner-padding-bottom: 10em;
+	--banner-background-image: url("mymotherpic.jpg");
+	--banner-background-size: contain;
+	--banner-background-position: top;
+	--banner-background-attachment: fixed;
+	--banner-background-repeat: no-repeat;
+	--banner-title-font-size: 5.0em;
+	--banner-title-font-weight: 1000;
+	--banner-title-color: #fff;
+	--banner-title-line-height: 1em;
+	--banner-paragraph-font-size: 3em;
+	--banner-paragraph-color: rgba(255, 255, 255, 1);
+	--banner-paragraph-margin-bottom: 0em;
+	--banner-paragraph-font-weight: 500;
+}
 
-		@media screen and (max-width: 980px) {
+#banner {
+	padding: var(--banner-padding-top) 0 var(--banner-padding-bottom) 0;
+	background-image: var(--banner-background-image);
+	background-size: var(--banner-background-size);
+	background-position: var(--banner-background-position);
+	background-attachment: var(--banner-background-attachment);
+	background-repeat: var(--banner-background-repeat);
+	text-align: center;
+	border-top: 0;
+}
 
-			#banner {
-				background-attachment: scroll;
-			}
+#banner h1 {
+	font-size: var(--banner-title-font-size);
+	font-weight: var(--banner-title-font-weight);
+	color: var(--banner-title-color);
+	line-height: var(--banner-title-line-height);
+	margin: 0;
+	padding: 0;
+}
 
-						#banner {
-				padding: 4em 0em 8em 0em;
-			}
-
-							#banner h1 {
-					font-size: 3em;
-				}
-
-				#banner p {
-					font-size: 2em;
-								font-weight: 1000;
-
-				}
-
-
-		}
-
-		@media screen and (max-width: 850px) {
-
-			#banner {
-				padding: 4em 0em 7.5em 0em;
-			}
-
-				#banner h1 {
-					font-size: 2.5em;
-				}
-
-				#banner p {
-					font-size: 1.5em;
-								font-weight: 1000;
-
-				}
-
-		}
-
-
-		@media screen and (max-width: 736px) {
-
-			#banner {
-				padding: 4em 0em 7em 0em;
-			}
-
-				#banner h1 {
-					font-size: 2em;
-				}
-
-				#banner p {
-					font-size: 1em;
-								font-weight: 1000;
-
-				}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#banner {
-				padding: 3em 0em 6em 0em;
-			}
-
-							#banner h1 {
-					font-size: 1.5em;
-					padding: 0em;
-				}
-
-				#banner p {
-					font-size: 0.75em;
-								font-weight: 1000;
-
-				}
-
-
-		}
-
-
+#banner p {
+	font-size: var(--banner-paragraph-font-size);
+	color: var(--banner-paragraph-color);
+	margin-bottom: var(--banner-paragraph-margin-bottom);
+	font-weight: var(--banner-paragraph-font-weight);
+}
 
 
 /* Footer */
