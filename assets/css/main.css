@@ -1810,7 +1810,7 @@
 		}
 
 			section.wrapper.style1 header h2, article.wrapper.style1 header h2 {
-				color: #0a0a0a;
+				color: #fff;
 			}
 
 			section.wrapper.style1 header p, article.wrapper.style1 header p {
@@ -1994,7 +1994,7 @@
 	}
 
 	label {
-		color: #000;
+		color: #fff;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 600;
