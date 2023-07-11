@@ -1994,7 +1994,7 @@
 	}
 
 	label {
-		color: #fff;
+		color: #000;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 600;
@@ -2741,7 +2741,7 @@
 	}
 
 		.subpage #header {
-			background: #5385c1;
+			background: #5c6063;
 			top: 0;
 			height: 44px;
 			line-height: 44px;
