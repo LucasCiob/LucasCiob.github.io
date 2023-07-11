@@ -2576,7 +2576,7 @@
 		background-color: #5a5a5a;
 		border-radius: 0;
 		border: 0;
-		color: #ffffff !important;
+		color: #ed0909 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 600;
@@ -2686,7 +2686,7 @@
 		button.special,
 		.button.special {
 			background-color: #5385c1;
-			color: #ffffff !important;
+			color: #ed0909 !important;
 		}
 
 			input[type="submit"].special:hover,
