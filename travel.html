@@ -40,10 +40,20 @@
 						<h2>Travel</h2>
 					</header>
 					<p>I travel a lot, and I am extremely grateful for the opportunity to see many places. Among the places I have visited, I liked three a lot: Colorado, Hawaii, and Florida. Firstly, Colorado. I like this state because of its snow, long ski trails, and alpine scenery. The steep slopes, powder snow, and groomed slopes add to the fun of skiing in Colorado. Moving on, Florida captivates me with its warm weather, sandy beaches, and turquoise waters. It is a place I like going to with friends, as we swim in the inviting warm water. It's not just the beaches that intrest me; I am also intrested by lively cities like Miami, Orlando, and Key West. These cities have a lot of entertainment options, including theme parks like Universal Studios, a variety of cuisine, and a lively atmosphere that keeps the energy levels high. Lastly, Hawaii. I really like Hawaii because of the diverse colors of sand found on its beaches, from golden sands to black sand beaches. The allure doesn't stop there – the waters surrounding Hawaii offer an amazing experience, even surpassing the beauty of Florida. Additionally, the islands have a bunch of great seafood, and the sight of tall volcanoes encircled by rainforest landscapes adds to the unique demeanor of Hawaii.
+						<p>var map = L.map('map').setView([51.505, -0.09], 13);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.marker([51.5, -0.09]).addTo(map)
+    .bindPopup('A pretty CSS popup.<br> Easily customizable.')
+    .openPopup();</p>
 						<p><img src="images/colorado.jpg" width="380">
 						<img src="images/florida.jpeg" width="380">
 						<img src="images/hawi.jpg" width="380">
 						</p>
+
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
